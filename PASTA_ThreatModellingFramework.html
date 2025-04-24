@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PASTA Threat Modeling Report - Sneaker App</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 2.5em;
+    }
+
+    h2 {
+      color: #1f618d;
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 1.05em;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #7f8c8d;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>PASTA Threat Modeling Report</h1>
+      <p><strong>Project:</strong> Sneaker Enthusiasts Mobile App</p>
+      <p><strong>Prepared by:</strong> Abubakari-Sadique Hamidu</p>
+    </header>
+
+    <section>
+      <h2>1. Define the Objectives</h2>
+      <p>The goal is to ensure secure transactions and protect users' personal and financial data on the sneaker enthusiasts mobile app. The app facilitates buying and selling shoes, so security must support confidentiality, integrity, and availability of user data.</p>
+    </section>
+
+    <section>
+      <h2>2. Define the Technical Scope</h2>
+      <p>The technical environment includes mobile clients (iOS and Android), a backend API, a payment gateway integration, cloud-based hosting, and a user authentication system. Sensitive data such as personal info, credit card details, and transaction history is handled.</p>
+    </section>
+
+    <section>
+      <h2>3. Application Decomposition</h2>
+      <p>The app includes user registration/login, product listings, chat/messaging features, payment processing, and user profile management. Components interact via secure API endpoints. Third-party integrations include payment services and notification APIs.</p>
+    </section>
+
+    <section>
+      <h2>4. Threat Analysis</h2>
+      <p>Potential threats include account takeovers, data breaches, payment fraud, and man-in-the-middle attacks. Threat actors may exploit weaknesses in session handling, data transmission, or poorly validated input forms.</p>
+    </section>
+
+    <section>
+      <h2>5. Vulnerability and Weakness Analysis</h2>
+      <p>Common vulnerabilities to address: Insecure APIs, weak encryption, missing input validation, and insufficient authentication protocols. Also includes potential insecure storage of sensitive information on mobile devices.</p>
+    </section>
+
+    <section>
+      <h2>6. Attack Modeling</h2>
+      <p>Attackers might use phishing to steal credentials, inject malicious scripts (XSS), or perform SQL injections on vulnerable endpoints. Threat actors could target admin panels or exploit third-party payment integrations if not properly secured.</p>
+    </section>
+
+    <section>
+      <h2>7. Risk and Impact Analysis</h2>
+      <p>Risks include loss of user trust, legal/regulatory penalties (e.g., for GDPR non-compliance), and financial loss due to fraud. Prioritize fixes for critical threats (like payment and login systems), and ensure continuous monitoring and patching.</p>
+    </section>
+
+    <footer>
+      &copy; 2025 Abubakari-Sadique Hamidu — All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
